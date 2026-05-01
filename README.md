@@ -19,7 +19,8 @@ To address this incompatibility, we present **MANTIS**. The proposed design, in 
 ## 🗂️ Repository Structure
 
 * `llama_mmlu_mxint_quantization_with_hw_simulation.ipynb`: PyTorch-based end-to-end evaluation pipeline. Simulates the MANTIS hardware dataflow (MXINT3 weights, MXINT8 activations, per-vector FP8 scaling) and injects characterized ADC noise into the Feed-Forward Networks (FFNs) of `Llama-3.1-8B-Instruct` to benchmark 5-shot MMLU accuracy.
-* *(Need to Add other code and directories here, e.g., `src/ notebooks/ `)*
+* `adc_noise_molleding`: ADC distribution fitting code. 
+* `benchmark_experiments`: Contains simulation code explained above. 
 
 ## 🚀 Getting Started
 
