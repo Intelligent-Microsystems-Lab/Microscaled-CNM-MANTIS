@@ -266,7 +266,7 @@ def evaluate_mmlu(model, tokenizer, device, checkpoint_dir, k_shot=5, batch_size
 def main():
     parser = argparse.ArgumentParser(description="Run distributed MMLU evaluation with hardware simulation.")
     parser.add_argument("--model_id", type=str, default="meta-llama/Llama-3.2-3B-Instruct", help="Hugging Face model ID.")
-    parser.add_argument("--hf_token", type=str, default="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", help="Your Hugging Face token.")
+    parser.add_argument("--hf_token", type=str, default="hf_XXX", help="Your Hugging Face token.")
     parser.add_argument("--output_dir", type=str, default="./results", help="Directory to save evaluation results.")
     parser.add_argument("--checkpoint_dir", type=str, default="./checkpoints", help="Directory to save checkpoints.")
     parser.add_argument("--k_shot", type=int, default=5, help="Number of few-shot examples.")
